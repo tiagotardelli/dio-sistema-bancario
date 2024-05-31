@@ -72,14 +72,17 @@ def menu_saque():
             valor_digitado = float(input())
             if valor_digitado > 0:
                 if valor_digitado < conta_bancaria:
-                    if saques_dia <= LIMITE_SAQUES:
-                        saques_dia += 1
-                        processar_transacao('S', valor_digitado)
-                        limpar_console()
-                        print(f'Saque no valor R$ {valor_digitado:.2f} realizado com sucesso.')
-                        break;
+                    if valor_digitado > 500.00:
+                        if saques_dia <= LIMITE_SAQUES:
+                            saques_dia += 1
+                            processar_transacao('S', valor_digitado)
+                            limpar_console()
+                            print(f'Saque no valor R$ {valor_digitado:.2f} realizado com sucesso.')
+                            break;
+                        else:
+                            print("Quantidade de saques exedeu o permitido.")
                     else:
-                        print("Quantidade de saques exedeu o permitido.")
+                        print("Não é permitido saque maior que R$ 500.00")
                 else:
                     print("Valor maior do que você pussui em conta.")
             else:
