@@ -72,7 +72,7 @@ def menu_saque():
             valor_digitado = float(input())
             if valor_digitado > 0:
                 if valor_digitado < conta_bancaria:
-                    if valor_digitado > 500.00:
+                    if valor_digitado <= 500.00:
                         if saques_dia <= LIMITE_SAQUES:
                             saques_dia += 1
                             processar_transacao('S', valor_digitado)
@@ -85,6 +85,7 @@ def menu_saque():
                         print("Não é permitido saque maior que R$ 500.00")
                 else:
                     print("Valor maior do que você pussui em conta.")
+                    break;
             else:
                 print("Somente valores positivos são aceitos para Saque.")
         except ValueError:
@@ -101,7 +102,6 @@ def menu_extrato():
         soma += extrato['valor'] * (-1 if extrato['operacao'] == 'S' else 1)
         print(f'{extrato['data']} {extrato['operacao']} R$ {extrato['valor']:.2f}')
     print(f"Valor total em conta R$ {soma:.2f}")
-
 
 def processar_opcao(opcao):
     if opcao == "d":
