@@ -1,0 +1,90 @@
+
+menu:
+  inicial: |
+    #############################
+    Bem vindo ao sistema Bancário
+    #############################
+    [u] Cadastro de Cliente
+    [c] Cadastro de Conta
+    [d] Depósito
+    [a] Saque
+    [e] Extrato
+    [s] Sair
+    #############################
+  cliente: |
+    #############################
+    Cadastro de Clientes
+    #############################
+    [n] Novo Cliente
+    [l] Listar Clientes
+    [v] Voltar ao Menu Inicial
+    #############################
+  conta: |
+    #############################
+    Cadastro de Contas
+    #############################
+    [n] Nova Conta
+    [l] Listar Contas
+    [v] Voltar ao Menu Inicial
+    #############################
+  depositar: | 
+    #############################
+    Depositar
+    #############################
+  sacar: |
+    #############################
+    Sacar
+    #############################
+  extrato: |   
+    #############################
+    Extrato 
+    #############################
+opcao:
+  conta: |
+    #############################
+    Escolha a conta:
+    #############################
+novo:
+  cliente: |
+    #############################
+    Novo Cliente
+    #############################
+  conta: |
+    ############################# 
+    Nova Conta
+    #############################
+listar:
+  cliente: |
+    #############################
+    Listar Clientes
+    #############################
+  conta: |
+    #############################
+    Listar Contas
+    #############################
+input:
+  opcao: "Digite uma opção: "
+  cpf: "Digite o CPF: "
+  cpf_cliente: "Digite o CPF do Cliente: "
+  nome: "Digite o Nome com Sobrenome: "
+  data_nascimento: "Digite a Data de Nascimento: "  
+  endereco_logradouro: "Digite o Logradouro: "
+  endereco_numero: "Digite o Número: "
+  endereco_bairro: "Digite o Bairro: "
+  endereco_cidade: "Digite a Cidade: "
+  endereco_estado: "Digite o Estado: "
+  valor: "Digite o Valor: "
+mensagem:
+  opcao_invalida: "Nenhuma opção valida para o valor digitado. Favor escolher outra opção!"
+  cpf_invalido: "CPF deve conter 11 dígitos."
+  cpf_duplicado: "CPF já cadastrado." 
+  numero_invalido: "Entrada inválida. Favor insira somente números."
+  nome_invalido: "Entrada inválida. Digite nome e sobrenome e Somente letras são permitidas."
+  data_invalida: "Entrada inválida. Favor insira uma data valida."
+  cliente_criado: "Cliente cadastrado com sucesso|"
+  cliente_duplicado: "Cliente já cadastrado!"
+  cliente_inexistente: "Cliente não cadastrado!"
+  conta_inexistente: "Cliente não possui conta!"
+  conta_criada: "Conta criada com sucesso!"
+  conta_inexistente: "Nenhuma conta cadastrada!"
+  extrato_sem_movimentacao: "Não foram realizadas movimentações."
