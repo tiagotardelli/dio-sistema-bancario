@@ -75,3 +75,42 @@ conta pertence a somente um usuário.
 Para vincular um usuário a uma conta, filtre a lista de usuários buscando o número do CPF informado para cada usuário da
 lista.
 
+########################################################################################################################
+## Objetivo Geral
+Iniciar a modelagem do sistema bancário em POO. Adicionar classes para cliente e as operações bancárias:
+depósito e saque.
+
+## Desafio
+Atualizar a implementação do sistema bancário, para armazenar os dados de clientes e contas bancárias em objetos ao
+invés de dicionários. O código deve seguir o modelo de classe UML a seguir:
+![modelo](Modelo_Classe_Banco.png)
+
+### Classe Conta:
+* Atributos: saldo, numero, agencia, cliente, historico
+* Métodos: saldo, nova_conta, sacar, depositar
+
+### Classe ContaCorrente
+* extende de Conta
+* Todos os atributos + dois: limite, limite_saques
+
+### Historico
+* Historico pertence a conta
+* argumento: transacoes
+* Método: adicionar_transacao
+
+### <<Intergace>> Transacao
+* Método: registrar
+
+### Deposito e Saque
+* Implemetam da classe abstrata Transacao
+
+### Cliente
+* atributos: endereco e contas
+* métodos: realizar_transacao e adicionar_conta
+
+### PessoaFisicaa
+* Tipo de Cliente
+
+## Desafio Extra
+Após concluir a modelagem das classes e a criação dos métodos. Atualizar os métodos que tratam as opções do menu, para
+funcionarem com as classes modeladas.
