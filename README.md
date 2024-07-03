@@ -1,7 +1,9 @@
+
 # dio-sistema-bancario
 Sitema bancário para entrega do projeto de desafio
 
-# Escopo
+# DESAFIO 01
+## Escopo
 Criar um sistema bancário com as operações: sacar, depositar e visualizar extrato
 ##
 ### Operação Depósito:
@@ -36,6 +38,7 @@ Valores devem ser exibidos como R$ XXX.XX
 
 
 ########################################################################################################################
+# DESAFIO 02
 ## Objetivo Geral
 Separar as funções existentes de saque, depósito e extrato em funções. Criar duas novas funções: cadastrar usuário 
 (cliente) e cadastrar conta bancária.
@@ -76,6 +79,7 @@ Para vincular um usuário a uma conta, filtre a lista de usuários buscando o n�
 lista.
 
 ########################################################################################################################
+# DESAFIO 03
 ## Objetivo Geral
 Iniciar a modelagem do sistema bancário em POO. Adicionar classes para cliente e as operações bancárias:
 depósito e saque.
@@ -114,3 +118,26 @@ invés de dicionários. O código deve seguir o modelo de classe UML a seguir:
 ## Desafio Extra
 Após concluir a modelagem das classes e a criação dos métodos. Atualizar os métodos que tratam as opções do menu, para
 funcionarem com as classes modeladas.
+
+########################################################################################################################
+# DESAFIO 04
+
+## Introdução
+Com os novos conhecimentos adquiridos sobre decoradores, geradores e iteradores, você foi encarregado de implementar
+as seguintes funcionalidades no sistema:
+* Decorador de log
+* Gerador de relatórios
+* Iterador personalizado
+
+### Decorador de log
+Implemente um decorador que seja aplicado a todas as funções de transações (depósito, saque, criação de conta, etc).
+Esse decorador deve registrar (printar) a data e hora de cada transação, bem como o tipo de transação.
+
+### Gerador de relatórios
+Crie um gerador que permita iterar sobre as transações de uma conta e retorne, uma a uma, as transações que foram
+realizadas. Esse gerador deve também ter uma forma de filtrar as transações baseado em seu tipo (por exemplo, apenas
+saques ou apenas depósitos).
+
+### Iterador personalizado
+Implemente um iterador personalizado Contalterador que permita iterar sobre todas as contas do banco, retornando
+informações básicas de cada conta (número, saldo atual, etc)
