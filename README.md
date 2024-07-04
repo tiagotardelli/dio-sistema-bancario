@@ -141,3 +141,15 @@ saques ou apenas depósitos).
 ### Iterador personalizado
 Implemente um iterador personalizado Contalterador que permita iterar sobre todas as contas do banco, retornando
 informações básicas de cada conta (número, saldo atual, etc)
+
+
+########################################################################################################################
+# DESAFIO 05
+
+## Introdução
+Com os novos conhecimentos adquiridos sobre data e hora, você foi encarregado de implementar as seguintes 
+funcionalidades no sistema:
+* Estabelecer um limite de 10 transações diárias para uma conta
+* Se o usuário tentar fazer uma transação após atingir o limite, deve ser informado que ele excedeu o número de
+transações permitidas para aquele dia
+* Mostre no extrato, a data e hora de todas as transações
