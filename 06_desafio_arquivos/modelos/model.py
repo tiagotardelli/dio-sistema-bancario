@@ -52,7 +52,10 @@ class PessoFisica(Cliente):
         self.cpf = cpf
         self.nome = nome
         self.data_nascimento = data_nascimento
-
+    
+    def __repr__(self) -> str:
+        return f"<{self.__class__.__name__}: ('{self.cpf}')>"
+    
     def __str__(self):
         return f"""\
             CPF:\t{self.cpf}
@@ -141,6 +144,8 @@ class ContaCorrente(Conta):
         
         return False
 
+    def __repr__(self) -> str:
+        return f"<{self.__class__.__name__}: ('{self.agencia}', '{self.numero}', '{self.cliente.nome}')>"
     
     def __str__(self):
         return f"""\
